@@ -14,3 +14,12 @@ bool analyse_input(char* buffer, char** child, char** parent)
 	//Возвращаем наличие/отсутствие входных данных
 	return(*child && *parent) ? true : false;
 }
+
+void make_new_mamber(FAMILY_TREE* mamb, char* child, char* parent, int x)
+{
+	//Копируем в класс FAMILY_TREE родителя
+	strncpy_s(mamb->parent, parent, MAXMAMBNAMB);
+	//Копируем в класс FAMILY_TREE ребенка от данного родителя(при наличии)
+	strncpy_s(mamb->child, ((x) ? child : parent), MAXMAMBNAMB);
+	return;
+}
