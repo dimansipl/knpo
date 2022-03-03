@@ -56,3 +56,28 @@ int get_deep(std::vector<FAMILY_TREE*>& mamb, int index, int& n)
 	//Возвращает число связи между членами семьи
 	return n;
 }
+
+void show_knee(const std::vector<FAMILY_TREE*>& mambers, int lnl, int knee)
+{
+	int screen_width = 70;
+	lnl += 2;
+	int count=0;
+	//Для членов семьи
+	for (int i = 0, cnt = lnl; i < mambers.size(); i++)
+	{
+		//Если колено члена семьи равна заданному колену, то счетчик считает количество одинаковых колен членов семьи
+		if (mambers[i]->knee == knee)
+		{
+			if (cnt >= screen_width)
+			{
+				cnt = lnl;
+			}
+			count++;
+			std::cout << std::setw(lnl) << "\n" <<mambers[i]->child;
+			cnt += lnl;
+		}
+	}
+	//Вывод количества одинаковых членов семьи с заданным коленом
+	std::cout << "\n";
+	std::cout << "Количество: " << count;
+}
