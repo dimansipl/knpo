@@ -1,0 +1,135 @@
+\hypertarget{functions_8cpp}{}\doxysection{functions.\+cpp File Reference}
+\label{functions_8cpp}\index{functions.cpp@{functions.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}FAMILY\+\_\+\+TREE.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{functions_8cpp_ad45fa8a0e8ce131215426e2b8c5ce74f}{analyse\+\_\+input}} (char $\ast$buffer, char $\ast$$\ast$child, char $\ast$$\ast$parent)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a84c3d8d915b60a852cf5e1e9bbe84172}{make\+\_\+new\+\_\+mamber}} (\mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$mamb, char $\ast$child, char $\ast$parent, int x)
+\item 
+int \mbox{\hyperlink{functions_8cpp_a1291311161c491c264cc23870ed0054f}{get\+\_\+deep}} (std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&mamb, int index, int \&n)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a75f8372d134610371539972509e3a886}{show\+\_\+knee}} (const std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&mambers, int lnl, int knee)
+\item 
+int \mbox{\hyperlink{functions_8cpp_a72d34e20adf7684dec79c40319cff122}{check\+\_\+kinship}} (std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&mambers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{functions_8cpp_ad45fa8a0e8ce131215426e2b8c5ce74f}\label{functions_8cpp_ad45fa8a0e8ce131215426e2b8c5ce74f}} 
+\index{functions.cpp@{functions.cpp}!analyse\_input@{analyse\_input}}
+\index{analyse\_input@{analyse\_input}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{analyse\_input()}{analyse\_input()}}
+{\footnotesize\ttfamily bool analyse\+\_\+input (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{char $\ast$$\ast$}]{child,  }\item[{char $\ast$$\ast$}]{parent }\end{DoxyParamCaption})}
+
+Функция проверяет входные данные buffer – поток входных данных child – указатель на указатель потомка родителя parent – указатель на указатель родителя Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{functions_8cpp_ad45fa8a0e8ce131215426e2b8c5ce74f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functions_8cpp_a72d34e20adf7684dec79c40319cff122}\label{functions_8cpp_a72d34e20adf7684dec79c40319cff122}} 
+\index{functions.cpp@{functions.cpp}!check\_kinship@{check\_kinship}}
+\index{check\_kinship@{check\_kinship}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_kinship()}{check\_kinship()}}
+{\footnotesize\ttfamily int check\+\_\+kinship (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&}]{mambers }\end{DoxyParamCaption})}
+
+Функция проверка родства. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}mambers\mbox{]}} & -\/ переменная вектора класса FAMILY TREE \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{functions_8cpp_a72d34e20adf7684dec79c40319cff122_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{functions_8cpp_a72d34e20adf7684dec79c40319cff122_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functions_8cpp_a1291311161c491c264cc23870ed0054f}\label{functions_8cpp_a1291311161c491c264cc23870ed0054f}} 
+\index{functions.cpp@{functions.cpp}!get\_deep@{get\_deep}}
+\index{get\_deep@{get\_deep}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_deep()}{get\_deep()}}
+{\footnotesize\ttfamily int get\+\_\+deep (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&}]{mamb,  }\item[{int}]{index,  }\item[{int \&}]{n }\end{DoxyParamCaption})}
+
+Функция eузнает глубину участника. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}index\mbox{]}} & – счетчик номера строки \\
+\hline
+{\em \mbox{[}n\mbox{]}} & – колено \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{functions_8cpp_a1291311161c491c264cc23870ed0054f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{functions_8cpp_a1291311161c491c264cc23870ed0054f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functions_8cpp_a84c3d8d915b60a852cf5e1e9bbe84172}\label{functions_8cpp_a84c3d8d915b60a852cf5e1e9bbe84172}} 
+\index{functions.cpp@{functions.cpp}!make\_new\_mamber@{make\_new\_mamber}}
+\index{make\_new\_mamber@{make\_new\_mamber}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{make\_new\_mamber()}{make\_new\_mamber()}}
+{\footnotesize\ttfamily void make\+\_\+new\+\_\+mamber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$}]{mamb,  }\item[{char $\ast$}]{child,  }\item[{char $\ast$}]{parent,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Функция создает нового участника mamb – указатель на класс \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} child – указатель потомка родителя parent – указатель родителя 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}x\mbox{]}} & – счетчик номера строки int \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{functions_8cpp_a84c3d8d915b60a852cf5e1e9bbe84172_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{functions_8cpp_a75f8372d134610371539972509e3a886}\label{functions_8cpp_a75f8372d134610371539972509e3a886}} 
+\index{functions.cpp@{functions.cpp}!show\_knee@{show\_knee}}
+\index{show\_knee@{show\_knee}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{show\_knee()}{show\_knee()}}
+{\footnotesize\ttfamily void show\+\_\+knee (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_f_a_m_i_l_y___t_r_e_e}{FAMILY\+\_\+\+TREE}} $\ast$ $>$ \&}]{mambers,  }\item[{int}]{lnl,  }\item[{int}]{knee }\end{DoxyParamCaption})}
+
+Функция смотрит колени 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}lnl\mbox{]}} & -\/ уровень колена \\
+\hline
+{\em \mbox{[}knee\mbox{]}} & -\/ входной уровень колена \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{functions_8cpp_a75f8372d134610371539972509e3a886_icgraph}
+\end{center}
+\end{figure}
